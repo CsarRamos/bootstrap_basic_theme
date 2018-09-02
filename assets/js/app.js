@@ -59,7 +59,10 @@ $( document ).ready(function() {
       if (arrayID == 'url') {url = attr}
       if (arrayID == 'tag') {tag = attr}
   });
-    return $( "#content-gallery" ).append("<a class=\""+tag+"\" data-fancybox=\"img\" href=\""+url+"\"> <img class=\"thumbs\"src=\""+url+"\"  alt=\""+description+"\"> </a>" );
+    var linkImage = "<a class=\""+tag+"\" data-protect=\"true\" data-small-btn=\"true\" data-fancybox=\""+tag+"\" href=\""+url+"\" data-caption=\""+description+"\">" + 
+      "<img class=\"thumbs\"src=\""+url+"\"  alt=\""+title+"\"> </a>"; 
+    
+    return $( "#content-gallery" ).append(linkImage);
   }
   
   function getImages(category) {

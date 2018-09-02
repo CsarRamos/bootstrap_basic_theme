@@ -1,5 +1,5 @@
 # Bootstrap Basic Theme
-> Simple responsive template with full carousel, services, gallery and contact.
+> Basic responsive template with full carousel, services, gallery and contact.
 
 ###### This template includes: Bootstrap, jQuery, Fancybox, jQuery Easing and Font Awesome.
 
@@ -50,6 +50,12 @@ You are free to save, share, and use this project.
     * ADD: Font Awesome Free 5.3.1
     * ADD: Contact icons 
     * ADD: Sample images
+    * Work in progress
+
+* 0.5
+    * ADD: Google Font Montserrat
+    * ADD: Controls to fancyBox Gallery
+    * ADD: Overlay images
     * Work in progress
 
 <!-- Markdown link & img dfn's -->

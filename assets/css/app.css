@@ -1,4 +1,5 @@
 html,body {
+  font-family: 'Montserrat', sans-serif;
   height:100%;
 }
 
@@ -8,7 +9,7 @@ section:nth-of-type(even) {
 
 .jumbotron {
   background: transparent;
-  padding-top: 125px; 
+  padding-top: 125px;
 }
 
 .carousel-img {
@@ -20,6 +21,45 @@ section:nth-of-type(even) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #343a40;
+
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .thumbs {
