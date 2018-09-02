@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
 
   <title>Bootstrap Basic Theme</title>
@@ -39,10 +40,16 @@
       </ul>
       <ul class="navbar-nav my-2 my-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">(+000) 000-000-00</a>
+          <a class="nav-link" href="#">
+            <i class="fas fa-phone-square"></i>
+            (+000) 000-000-00
+        </a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="mailto:example@email.com">example@email.com</a>
+          <a class="nav-link" href="mailto:example@email.com">
+            <i class="fas fa-envelope"></i>
+            example@email.com
+          </a>
         </li>
       </ul>
     </div>
@@ -58,21 +65,21 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block carousel-img" src="img/first-slide.png" alt="First slide">
+        <img class="d-block carousel-img" src="img/slide/first-slide.png" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block carousel-img" src="img/second-slide.png" alt="Second slide">
+        <img class="d-block carousel-img" src="img/slide/second-slide.png" alt="Second slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block carousel-img" src="img/third-slide.png" alt="Third slide">
+        <img class="d-block carousel-img" src="img/slide/third-slide.png" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -99,21 +106,21 @@
     <div class="container-fluid">
       <div class="row justify-content-md-center">
         <div class="col-md-3 m-3">
-          <img class="w-100" src="img/first-slide.png">
+          <img class="w-100" src="img/slide/first-slide.png">
           <div class="pt-3">
             <h2>Lorem Ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
           </div>
         </div>
         <div class="col-md-3 m-3">
-          <img class="w-100" src="img/second-slide.png">
+          <img class="w-100" src="img/slide/second-slide.png">
           <div class="pt-3">
            <h2>Lorem Ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
           </div>
         </div>
         <div class="col-md-3 m-3">
-          <img class="w-100" src="img/third-slide.png">
+          <img class="w-100" src="img/slide/third-slide.png">
           <div class="pt-3">
            <h2>Lorem Ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
@@ -137,7 +144,7 @@
     <div class="container-fluid">
       <div id="controls-gallery" class="text-center mb-5">
         <div class="btn-group" role="group" aria-label="Filter Buttons">
-          <button name="all" type="button" class="btn btn-secondary">Refresh</button>
+          <button name="all" type="button" class="btn btn-secondary"><i class="fas fa-sync-alt"></i></button>
           <button name="sample_1" type="button" class="btn btn-secondary">Sample 1</button>
           <button name="sample_2" type="button" class="btn btn-secondary">Sample 2</button>
         </div>
@@ -159,10 +166,10 @@
         <div class="col-md-4 m-3">
           <h2 class="pb-3">Lorem ipsum</h2>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">NAME: Jon Smith</li>
-            <li class="list-group-item">ADDRESS: Somewhere Road #87257 TN 00000-0000</li>
-            <li class="list-group-item">PHONE: <a href="#">(+000) 000-000-00</a></li>
-            <li class="list-group-item">EMAIL: <a href="mailto:example@email.com">example@email.com</a></li>
+            <li class="list-group-item"><i class="fas fa-user-alt"></i> NAME: Jon Smith</li>
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> ADDRESS: Somewhere Road #87257 TN 00000-0000</li>
+            <li class="list-group-item"><i class="fas fa-phone-square"></i> PHONE: <a href="#">(+000) 000-000-00</a></li>
+            <li class="list-group-item"><i class="fas fa-envelope"></i> EMAIL: <a href="mailto:example@email.com">example@email.com</a></li>
           </ul>
         </div>
         <div class="col-md-4 m-3">

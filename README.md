@@ -1,15 +1,21 @@
 # Bootstrap Basic Theme
 > Simple template responsive with full carousel & fancyBox Gallery.
 
-The image is of the first version of the template.
-
-![](img/header.png)
+![](img/sample/header.png)
+![](img/sample/services.png)
+![](img/sample/gallery.png)
+![](img/sample/contact.png)
 
 ## Usage example
 
 You are free to save, share, and use this project.
 
-_For more examples and usage, please refer to the [Bootstrap Documentation][bootstrap], [Jquery Documentation][jquery] or [Fancybox Documentation][fancybox]._
+For more examples and usage, please refer online documentation: 
+    ⋅⋅* [Bootstrap Documentation][bootstrap] 
+    ⋅⋅* [jQuery Documentation][jquery]
+    ⋅⋅* [Fancybox Documentation][fancybox]
+    ⋅⋅* [jQuery Easing Documentation][jquery-easing]
+    ⋅⋅* [Font Awesome Documentation][font-awesome]
 
 ## Release History
 
@@ -37,7 +43,15 @@ _For more examples and usage, please refer to the [Bootstrap Documentation][boot
     * FIX: Closes responsive menu when a scroll trigger link is clicked
     * Work in progress
 
+* 0.4
+    * ADD: Font Awesome Free 5.3.1
+    * ADD: Contact icons 
+    * ADD: Sample images
+    * Work in progress
+
 <!-- Markdown link & img dfn's -->
 [bootstrap]: https://getbootstrap.com/docs/4.1/getting-started/introduction/
 [jquery]: https://jquery.com/
 [fancybox]: https://fancyapps.com/
+[jquery-easing]: http://gsgd.co.uk/sandbox/jquery/easing/
+[font-awesome]: https://fontawesome.com/
