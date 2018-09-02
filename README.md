@@ -1,5 +1,5 @@
 # Bootstrap Basic Theme
-> Simple template responsive with full carousel, services, gallery and contact.
+> Simple responsive template with full carousel, services, gallery and contact.
 
 ###### This template includes: Bootstrap, jQuery, Fancybox, jQuery Easing and Font Awesome.
 
@@ -12,7 +12,7 @@
 
 You are free to save, share, and use this project.
 
-For more examples and usage, please refer online documentation: 
+- For more examples and usage, please refer online documentation: 
     - [Bootstrap Documentation][bootstrap] 
     - [jQuery Documentation][jquery]
     - [Fancybox Documentation][fancybox]
