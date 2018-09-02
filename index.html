@@ -8,6 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
 
   <title>Bootstrap Basic Theme</title>
@@ -15,30 +16,25 @@
 
 <body>
 
+  <!-- NavBar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Dropdown Item</a>
-            <a class="dropdown-item" href="#">Dropdown Item</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Dropdown Item</a>
-          </div>
-        </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -47,7 +43,9 @@
       </form>
     </div>
   </nav>
+  <!-- End NavBar -->
 
+  <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -86,19 +84,95 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <!-- End carousel -->
 
-  <section class="py-5">
-    <div class="container">
-      <h1>Bootstrap Basic Theme</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <!-- Services section -->
+  <section id="services">
+    <div class="jumbotron text-center">
+      <h1 class="jumbotron-heading">Services example</h1>
+      <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col-md-3 m-3">
+          <img class="w-100" src="img/first-slide.png">
+          <div class="pt-3">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
+          </div>
+        </div>
+        <div class="col-md-3 m-3">
+          <img class="w-100" src="img/second-slide.png">
+          <div class="pt-3">
+           <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
+          </div>
+        </div>
+        <div class="col-md-3 m-3">
+          <img class="w-100" src="img/third-slide.png">
+          <div class="pt-3">
+           <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit risus vel ex volutpat, quis consequat sem convallis. Proin quis luctus ipsum. Fusce ultrices suscipit sapien eget iaculis. </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- End services section -->
 
+  <!-- Gallery section -->
+  <section id="gallery">
+    <div class="jumbotron text-center">
+      <h1 class="jumbotron-heading">Gallery example</h1>
+      <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="content-gallery" class="text-center">
+      </div>
+    </div>
+  </section>
+  <!-- End gallery section -->
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="jumbotron text-center">
+      <h1 class="jumbotron-heading">Contact example</h1>
+      <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4 m-3">
+          <h2 class="pb-3">Lorem ipsum</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">NAME: Jon Smith</li>
+            <li class="list-group-item">ADDRESS: Somewhere Road #87257 TN 00000-0000</li>
+            <li class="list-group-item">PHONE: <a href="#">(+00) 000-000-000</a></li>
+            <li class="list-group-item">EMAIL: <a href="mailto:example@email.com">example@email.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 m-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91597767326!2d-74.12010645798401!3d40.69740302676455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1535832629500" frameborder="0" allowfullscreen>
+          </iframe>
+          <div class="pt-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact section -->
+
+  <!-- Footer -->
   <footer class="footer bg-dark">
     <div class="container">
       <span class="text-muted">Bootstrap Basic Theme.</span>
     </div>
   </footer>
+  <!-- End footer -->
 
   <!-- JS -->
   <script src="assets/js/app.js"></script>

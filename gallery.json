@@ -1,0 +1,16 @@
+{
+  "gallery": {
+    "sample_1": [
+      { "title":"title photo 1", "description":"description photo 1", "url":"img/gallery/sample_1/first-slide.png" },
+      { "title":"title photo 2", "description":"description photo 2", "url":"img/gallery/sample_1/second-slide.png" },
+      { "title":"title photo 3", "description":"description photo 3", "url":"img/gallery/sample_1/third-slide.png" },
+      { "title":"title photo 3", "description":"description photo 3", "url":"img/gallery/sample_1/first-slide.png" }
+    ],
+    "sample_2": [
+      { "title":"title photo 2", "description":"description photo 2", "url":"img/gallery/sample_2/second-slide.png" },
+      { "title":"title photo 3", "description":"description photo 3", "url":"img/gallery/sample_2/third-slide.png" },
+      { "title":"title photo 3", "description":"description photo 3", "url":"img/gallery/sample_2/first-slide.png" },
+      { "title":"title photo 2", "description":"description photo 2", "url":"img/gallery/sample_2/second-slide.png" }
+    ]
+  }
+}

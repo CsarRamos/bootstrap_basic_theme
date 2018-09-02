@@ -1,5 +1,5 @@
 # Bootstrap Basic Theme
-> Simple template responsive with full carousel.
+> Simple template responsive with full carousel & fancyBox Gallery.
 
 The image is of the first version of the template.
 
@@ -7,9 +7,9 @@ The image is of the first version of the template.
 
 ## Usage example
 
-Get started with Bootstrap v4 and Jquery, you are free to save, share, and use this project.
+You are free to save, share, and use this project.
 
-_For more examples and usage, please refer to the [Bootstrap Documentation][bootstrap]._
+_For more examples and usage, please refer to the [Bootstrap Documentation][bootstrap], [Jquery Documentation][jquery] or [Fancybox Documentation][fancybox]._
 
 ## Release History
 
@@ -21,5 +21,17 @@ _For more examples and usage, please refer to the [Bootstrap Documentation][boot
     * FIX: Footer Sticky
     * Work in progress
 
+* 0.2
+    * ADD: fancyBox v3.4.1
+    * ADD: Sections Services, Gallery and Contact
+    * ADD: Directory img/gallery/
+    * ADD: gallery.json
+    * ADD: Controls to fancyBox Gallery
+    * FIX: Responsive Design
+    * Work in progress
+
+
 <!-- Markdown link & img dfn's -->
 [bootstrap]: https://getbootstrap.com/docs/4.1/getting-started/introduction/
+[jquery]: https://jquery.com/
+[fancybox]: https://fancyapps.com/
