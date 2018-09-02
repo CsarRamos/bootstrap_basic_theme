@@ -30,6 +30,12 @@ _For more examples and usage, please refer to the [Bootstrap Documentation][boot
     * FIX: Responsive Design
     * Work in progress
 
+* 0.3
+    * ADD: jQuery Easing v1.4.1
+    * ADD: Filter images by tags
+    * ADD: Active class to navbar items on scroll
+    * FIX: Closes responsive menu when a scroll trigger link is clicked
+    * Work in progress
 
 <!-- Markdown link & img dfn's -->
 [bootstrap]: https://getbootstrap.com/docs/4.1/getting-started/introduction/

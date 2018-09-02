@@ -17,40 +17,44 @@
 <body>
 
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#home">Navbar <em class="text-muted">Text Secondary</em></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link js-scroll-trigger" href="#services">Services</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">(+000) 000-000-00</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="mailto:example@email.com">example@email.com</a>
+        </li>
+      </ul>
     </div>
   </nav>
   <!-- End NavBar -->
 
   <!-- Carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="home" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#home" data-slide-to="0" class="active"></li>
+      <li data-target="#home" data-slide-to="1"></li>
+      <li data-target="#home" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -75,11 +79,11 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#home" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -131,6 +135,13 @@
       </div>
     </div>
     <div class="container-fluid">
+      <div id="controls-gallery" class="text-center mb-5">
+        <div class="btn-group" role="group" aria-label="Filter Buttons">
+          <button name="all" type="button" class="btn btn-secondary">Refresh</button>
+          <button name="sample_1" type="button" class="btn btn-secondary">Sample 1</button>
+          <button name="sample_2" type="button" class="btn btn-secondary">Sample 2</button>
+        </div>
+      </div>
       <div id="content-gallery" class="text-center">
       </div>
     </div>
@@ -150,7 +161,7 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">NAME: Jon Smith</li>
             <li class="list-group-item">ADDRESS: Somewhere Road #87257 TN 00000-0000</li>
-            <li class="list-group-item">PHONE: <a href="#">(+00) 000-000-000</a></li>
+            <li class="list-group-item">PHONE: <a href="#">(+000) 000-000-00</a></li>
             <li class="list-group-item">EMAIL: <a href="mailto:example@email.com">example@email.com</a></li>
           </ul>
         </div>
@@ -169,7 +180,7 @@
   <!-- Footer -->
   <footer class="footer bg-dark">
     <div class="container">
-      <span class="text-muted">Bootstrap Basic Theme.</span>
+      <span class="text-muted">Bootstrap Basic Theme</span>
     </div>
   </footer>
   <!-- End footer -->
