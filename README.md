@@ -13,6 +13,7 @@
 You are free to save, share, and use this project.
 
 - For more examples and usage, please refer online documentation: 
+
     - [Bootstrap Documentation][bootstrap] 
     - [jQuery Documentation][jquery]
     - [Fancybox Documentation][fancybox]
