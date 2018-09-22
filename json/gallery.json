@@ -1,0 +1,23 @@
+{
+  "gallery": {
+    "colors": [
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-blue.png", "tag":"blue text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-light-green.png", "tag":"green text-black" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-red.png", "tag":"red text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-green.png", "tag":"green text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-yellow.png", "tag":"yellow text-black" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-blue.png", "tag":"blue text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-green.png", "tag":"green text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-red.png", "tag":"red text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-light-green.png", "tag":"green text-black" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-yellow.png", "tag":"yellow text-black" }
+    ],
+    "colors-2": [
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-blue.png", "tag":"blue text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-red.png", "tag":"red text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-green.png", "tag":"green text-white" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-light-green.png", "tag":"green text-black" },
+      { "title":"Sample title image", "description":"Sample description image.", "url":"img/gallery/category/small-yellow.png", "tag":"yellow text-black" }
+    ]
+  }
+}
