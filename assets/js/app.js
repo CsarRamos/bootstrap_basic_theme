@@ -79,7 +79,7 @@ $( document ).ready(function() {
 
   function getNameCategories() {
     var categories = [];
-    $("#controls-gallery > div > button").each(function(index, item) {
+    $("#controls-gallery > button").each(function(index, item) {
       categories.push("."+$(item).attr("name"));
     });
     return categories;
@@ -90,12 +90,8 @@ $( document ).ready(function() {
       showCategories(categories);
     }
     else {
+      deleteCategoriesByTag(category, categories);
       $(showNameCategoryByTag(category)).fadeIn();
-      for (var i = categories.length - 1; i >= 0; i--) {
-        if (categories[i] != showNameCategoryByTag(category)) {
-          $(categories[i]).fadeOut();
-        }
-      }  
     }
   }
 
@@ -107,6 +103,14 @@ $( document ).ready(function() {
   
   function showNameCategoryByTag(category) {
     return ("."+category.attr('name'));
+  }
+
+  function deleteCategoriesByTag(category, categories){
+    for (var i = categories.length - 1; i >= 0; i--) {
+      if (categories[i] != showNameCategoryByTag(category) && categories[i] !=  ".all") {
+        $(categories[i]).fadeOut();
+      }
+    }
   }
 
   function smoothScrolling(element){
@@ -122,19 +126,77 @@ $( document ).ready(function() {
     }
   }
 
+  function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+      c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+      c_value = null;
+    }else{
+      c_start = c_value.indexOf("=", c_start) + 1;
+      var c_end = c_value.indexOf(";", c_start);
+      if (c_end == -1){
+        c_end = c_value.length;
+      }
+      c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+  }
+
+  function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+  }
+
+  function resizeCarouselImages(images){
+    images.each(function() {
+      var $src = $(this).attr('src');
+      var $color = $(this).attr('data-color');
+      $(this).parent().css({
+        'background-image' : 'url(' + $src + ')',
+        'background-color' : $color
+      });
+      $(this).remove();
+    });
+  }
+
+  function getWheight() {
+    return $(window).height();
+  }
+
+  function getItemCarousel() {
+    return $('.carousel-item');
+  }
+
+  // ==================================================
+  // Sample Cookie for privacy
+  //
+  // ==================================================
+  if(getCookie('acept_cookie')!="1"){
+    $('#cookies').css('display', 'block');
+  }
+
+  $('#cookie').click(function(){
+    setCookie('acept_cookie','1',365);
+    $('#cookies').css('display', 'none');
+  });
+
   // ==================================================
   // Gallery fancyBox
   // Load JSON-encoded data. (gallery.json)
   //
   // ==================================================
-  $.getJSON("gallery.json", function(json) {  
+  $.getJSON("json/gallery.json", function(json) { 
     getCategories(json.gallery);
   });
 
   // Show category by tag
-  $("#controls-gallery > div > button").click(function() {
-    var categories = getNameCategories();
-    showCategoryByTag($(this), categories);
+  $("#controls-gallery > button").click(function() {
+    showCategoryByTag($(this), getNameCategories());
   });
 
   // ==================================================
@@ -155,6 +217,17 @@ $( document ).ready(function() {
   $('body').scrollspy({
     target: '#sideNav'
   });
+
+  // Resize Bootstrap carousel 
+  $(window).on('resize', function (){
+    $(window).height();
+    getItemCarousel().height(getWheight());
+  });
+  
+  getItemCarousel().eq(0).addClass('active');
+  getItemCarousel().height(getWheight()); 
+  getItemCarousel().addClass('full-screen');
+  resizeCarouselImages($('.carousel img'));
 
 });
 

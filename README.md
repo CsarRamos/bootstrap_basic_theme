@@ -58,6 +58,18 @@ You are free to save, share, and use this project.
     * ADD: Overlay images
     * Work in progress
 
+* 0.6
+    * ADD: Google Font Titillium Web
+    * ADD: New images
+    * ADD: Info cookies
+    * ADD: Social icons
+    * FIX: Responsive Design
+    * FIX: Resize Bootstrap carousel
+    * FIX: Gallery filter images by multiple tags
+    * REMOVED: Google Font Montserrat
+    * REMOVED: Slide images
+    * Work in progress
+
 <!-- Markdown link & img dfn's -->
 [bootstrap]: https://getbootstrap.com/docs/4.1/getting-started/introduction/
 [jquery]: https://jquery.com/
